@@ -5,6 +5,11 @@ const vizTable = document.getElementById('viz-table');
 const vizTableRows = [];
 
 function attachGamepad(gamepad) {
+  for (let i = 0; i < gamepadState.length; i++) {
+    if (gamepadState[i].index === gamepad.index) {
+      return;
+    }
+  }
   const row = createGamepadViz(gamepad);
   gamepadState.push({
     row: row,
