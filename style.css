@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: system, "Helvetica Neue", Helvetica, sans-serif;
+  color: #222732;
+}
+
+body {
+  margin: 0;
+  border-top: 4px solid #2284e2;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  color: #535458;
+  font-size: 14px;
+}
+
+a {
+  color: #2284e2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #48a6fa;
+}
+
+main {
+  margin: 0 80px;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+footer {
+  padding: 20px 80px;
+  background-color: #cceaff;
+}
+
+#viz {
+
+}
+
+#viz-empty {
+  text-align: center;
+  background: #fffcd9;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.gamepad-viz-row {
+  font-family: monospace;
+  border-top: 1px solid #f1dd7d;
+  line-height: 30px;
+}
+.gamepad-viz-row:last-child {
+  border-bottom: 1px solid #f1dd7d;
+}
+.gamepad-viz-label {
+  width: 100px;
+  padding: 6px;
+  float: left;
+}
+.gamepad-viz-value {
+  padding: 6px;
+  margin-left: 100px;
+}
+.gamepad-viz-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #bcc1c7;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.gamepad-viz-button.touched {
+  border-color: #91aaca;
+}
+.gamepad-viz-button.pressed {
+  background-color: #37a2ff;
+  color: #fff;
+}
+.gamepad-viz-axis {
+  display: block;
+  width: 200px;
+  height: 20px;
+  border: 1px solid #bcc1c7;
+  margin: 5px 0 10px 0;
+}
+.gamepad-viz-axis:last-child {
+  margin-bottom: 5px;
+}
+.gamepad-viz-axis > div {
+  height: 100%;
+  background-color: #85b9e6;
+  width: 0;
+}

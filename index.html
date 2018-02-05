@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gamepad API Reference</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Web Gamepad API</h1>
+    <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API">Gamepad API</a> was added to browsers to let webpages receive input from physical gamepads.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Gamepad Visualizer</h2>
+      <p>Explore gamepads connected to your system</p>
+      <div id="viz">
+        <div id="viz-empty">No gamepads detected. If your gamepad is connected and powered on, try pressing a button to activate it.</div>
+        <div id="viz-table"></div>
+      </div>
+    </section>
+    <section>
+      <h2>Using the Gamepad API</h2>
+    </section>
+    <section>
+      <h2>Gamepad Reference</h2>
+      <p>Information about popular external gamepads</p>
+      <div class="expand-table" id="reference">
+        <div class="table-entry">
+          <label for="ref-1">Xbox One Wireless Controller</label>
+          <div class="entry-data">
+            <div class="entry-row">
+              <div class="entry-row-label">id</div>
+              <div class="entry-row-value">
+                <div><code>Xbox 360 Controller (XInput STANDARD GAMEPAD)</code> (Chrome, Edge)</div>
+                <div><code>xinput</code> (Firefox)</div>
+              </div>
+            </div>
+            <div class="entry-row">
+              <div class="entry-row-label">mapping</div>
+              <div class="entry-row-value"><code>standard</code></div>
+            </div>
+            <div class="entry-row-label"></div>
+              <div class="entry-row-label">Buttons</div>
+              <div class="entry-row-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <footer></footer>
+</body>
+</html>
